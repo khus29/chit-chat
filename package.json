@@ -1,0 +1,11 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Chit-Chat Server",
+  "author": "Khushboo",
+  "main": "app.js",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "^1.4.5"
+  }
+}

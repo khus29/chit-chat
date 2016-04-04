@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Chit-Chat</title>
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="text-center">Welcome to Chit-Chat Room!</h2> 
+			<div class="row chat-room">
+				<div class="col-sm-4 users-list">
+					<h3 class="text-center">Chatters</h3>
+					<div id="users"></div>
+				</div>
+				<div class="col-sm-8 chats-list">
+					<div class="chat-div">
+						<h3 class="text-center">Chats</h3>
+						<p class="info"></p>
+						<div id="chats"></div>
+					</div>
+					<div class="form-div">
+						<form id="chat-form" class="form-inline">
+							 <div class="input-group input-group-lg">
+								<input class="form-control" type="text" placeholder="type your message" id="chat">
+							</div>
+							<button type="submit" class="btn btn-lg btn-primary">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--<script src=="bootstrap/js/bootstrap.js"> </script>-->
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/chat.js"></script>
+	</body>	
+</html>
